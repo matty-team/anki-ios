@@ -7,22 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F52EFB5E290A588300702750 /* EditDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52EFB5D290A588300702750 /* EditDeckView.swift */; };
+		F536829B290D239800E7AE35 /* EditDeckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F536829A290D239800E7AE35 /* EditDeckViewModel.swift */; };
 		F54D1223290661090078C7DD /* AnkiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54D1222290661090078C7DD /* AnkiApp.swift */; };
-		F54D1225290661090078C7DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54D1224290661090078C7DD /* ContentView.swift */; };
 		F54D12272906610A0078C7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54D12262906610A0078C7DD /* Assets.xcassets */; };
 		F54D122A2906610A0078C7DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54D12292906610A0078C7DD /* Preview Assets.xcassets */; };
 		F54D122C2906610A0078C7DD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54D122B2906610A0078C7DD /* Persistence.swift */; };
 		F54D122F2906610A0078C7DD /* Anki.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F54D122D2906610A0078C7DD /* Anki.xcdatamodeld */; };
+		F54D12362906656D0078C7DD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54D12352906656D0078C7DD /* MainView.swift */; };
+		F54D123C2906678A0078C7DD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54D123B2906678A0078C7DD /* MainViewModel.swift */; };
+		F5540468290818E600A4E76C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5540467290818E600A4E76C /* Card.swift */; };
+		F554046A290818EC00A4E76C /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5540469290818EC00A4E76C /* Deck.swift */; };
+		F554046F29081B6300A4E76C /* DeckStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F554046E29081B6300A4E76C /* DeckStore.swift */; };
+		F55EEF95290C3ACC00FED69D /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EEF94290C3ACC00FED69D /* DeckView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F52EFB5D290A588300702750 /* EditDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDeckView.swift; sourceTree = "<group>"; };
+		F536829A290D239800E7AE35 /* EditDeckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDeckViewModel.swift; sourceTree = "<group>"; };
 		F54D121F290661090078C7DD /* Anki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54D1222290661090078C7DD /* AnkiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnkiApp.swift; sourceTree = "<group>"; };
-		F54D1224290661090078C7DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F54D12262906610A0078C7DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F54D12292906610A0078C7DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F54D122B2906610A0078C7DD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F54D122E2906610A0078C7DD /* Anki.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Anki.xcdatamodel; sourceTree = "<group>"; };
+		F54D12352906656D0078C7DD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F54D123B2906678A0078C7DD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F5540467290818E600A4E76C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F5540469290818EC00A4E76C /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		F554046E29081B6300A4E76C /* DeckStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckStore.swift; sourceTree = "<group>"; };
+		F55EEF94290C3ACC00FED69D /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +69,13 @@
 		F54D1221290661090078C7DD /* Anki */ = {
 			isa = PBXGroup;
 			children = (
+				F55404662908183F00A4E76C /* View */,
+				F55404652908183400A4E76C /* ViewModel */,
+				F55404642908182D00A4E76C /* Model */,
+				F554046B29081B4300A4E76C /* Store */,
 				F54D1222290661090078C7DD /* AnkiApp.swift */,
-				F54D1224290661090078C7DD /* ContentView.swift */,
-				F54D12262906610A0078C7DD /* Assets.xcassets */,
 				F54D122B2906610A0078C7DD /* Persistence.swift */,
+				F54D12262906610A0078C7DD /* Assets.xcassets */,
 				F54D122D2906610A0078C7DD /* Anki.xcdatamodeld */,
 				F54D12282906610A0078C7DD /* Preview Content */,
 			);
@@ -71,6 +88,42 @@
 				F54D12292906610A0078C7DD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F55404642908182D00A4E76C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5540467290818E600A4E76C /* Card.swift */,
+				F5540469290818EC00A4E76C /* Deck.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F55404652908183400A4E76C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F54D123B2906678A0078C7DD /* MainViewModel.swift */,
+				F536829A290D239800E7AE35 /* EditDeckViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F55404662908183F00A4E76C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F54D12352906656D0078C7DD /* MainView.swift */,
+				F55EEF94290C3ACC00FED69D /* DeckView.swift */,
+				F52EFB5D290A588300702750 /* EditDeckView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F554046B29081B4300A4E76C /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F554046E29081B6300A4E76C /* DeckStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F554046A290818EC00A4E76C /* Deck.swift in Sources */,
 				F54D122F2906610A0078C7DD /* Anki.xcdatamodeld in Sources */,
+				F54D123C2906678A0078C7DD /* MainViewModel.swift in Sources */,
+				F536829B290D239800E7AE35 /* EditDeckViewModel.swift in Sources */,
+				F554046F29081B6300A4E76C /* DeckStore.swift in Sources */,
 				F54D122C2906610A0078C7DD /* Persistence.swift in Sources */,
-				F54D1225290661090078C7DD /* ContentView.swift in Sources */,
 				F54D1223290661090078C7DD /* AnkiApp.swift in Sources */,
+				F52EFB5E290A588300702750 /* EditDeckView.swift in Sources */,
+				F54D12362906656D0078C7DD /* MainView.swift in Sources */,
+				F5540468290818E600A4E76C /* Card.swift in Sources */,
+				F55EEF95290C3ACC00FED69D /* DeckView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -257,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,6 +343,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +373,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

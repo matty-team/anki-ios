@@ -67,9 +67,9 @@ struct DeckView: View {
     
     private func EditDeckScreen() -> some View {
         let vm = EditDeckViewModel(deck)
-        return EditDeckView(vm) {
-            deck.name = vm.name
-            deck.color = vm.color
+        return EditDeckView(vm) { result in
+            deck.name = result.name
+            deck.color = result.color
         } onDelete: {
             dismiss()
             onDelete()

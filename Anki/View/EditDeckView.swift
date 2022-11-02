@@ -4,13 +4,13 @@ struct EditDeckView: View {
     
     @Environment(\.presentationMode) private var presentationMode
     
-    @StateObject var editDeck: EditDeckViewModel
+    @ObservedObject var editDeck: EditDeckViewModel
     
-    private let onSubmit: () -> ()
+    private let onSubmit: (Deck) -> ()
     private let onDelete: (() -> ())?
     
-    init(_ vm: EditDeckViewModel, onSubmit: @escaping () -> (), onDelete: (() -> ())? ) {
-        self._editDeck = StateObject(wrappedValue: vm)
+    init(_ vm: EditDeckViewModel, onSubmit: @escaping (Deck) -> (), onDelete: (() -> ())? ) {
+        self.editDeck = vm
         self.onSubmit = onSubmit
         self.onDelete = onDelete
     }
@@ -41,7 +41,7 @@ struct EditDeckView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Done") {
-                        onSubmit()
+                        onSubmit(editDeck.result)
                         dismiss()
                     }
                 }
@@ -67,7 +67,7 @@ struct EditDeckView: View {
 struct EditDeckView_Previews: PreviewProvider {
     static var previews: some View {
         let vm = EditDeckViewModel()
-        EditDeckView(vm) {
+        EditDeckView(vm) { result in
         } onDelete: {}
     }
 }

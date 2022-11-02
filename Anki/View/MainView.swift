@@ -100,8 +100,8 @@ struct MainView: View {
     
     private func NewDeckScreen() -> some View {
         let vm = EditDeckViewModel()
-        return EditDeckView(vm) {
-            mvm.addDeck(vm.result)
+        return EditDeckView(vm) { result in
+            mvm.addDeck(result)
         } onDelete: {
             
         }
